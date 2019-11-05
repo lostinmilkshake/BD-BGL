@@ -1,0 +1,2 @@
+SELECT CONCAT('The title is: ',title,',title number ',title_no) FROM library.dbo.title;
+SELECT CONCAT('The title is: ',title,',title number ', CONVERT(char,title_no)) AS char_no FROM library.dbo.title;

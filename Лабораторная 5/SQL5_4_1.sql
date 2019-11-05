@@ -1,0 +1,1 @@
+SELECT DISTINCT member.member_no, lastname, [fine_assessed] FROM library.dbo.member JOIN library.dbo.loanhist ON member.member_no=loanhist.member_no WHERE [fine_assessed]>5;
